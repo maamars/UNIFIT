@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{48A33C2D-CE11-4158-9783-B960547C643F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>UNIFIT</RootNamespace>
+    <AssemblyName>UNIFIT</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADMINPROFILE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINPROFILE.Designer.cs">
+      <DependentUpon>ADMINPROFILE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CANCELLED.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CANCELLED.Designer.cs">
+      <DependentUpon>CANCELLED.cs</DependentUpon>
+    </Compile>
+    <Compile Include="COMPLETED.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COMPLETED.Designer.cs">
+      <DependentUpon>COMPLETED.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Input.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input.Designer.cs">
+      <DependentUpon>Input.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INPUTORDERS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INPUTORDERS.Designer.cs">
+      <DependentUpon>INPUTORDERS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INVENTORY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INVENTORY.Designer.cs">
+      <DependentUpon>INVENTORY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LISTOFORDERS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LISTOFORDERS.Designer.cs">
+      <DependentUpon>LISTOFORDERS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MESSAGES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MESSAGES.Designer.cs">
+      <DependentUpon>MESSAGES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ONGOING.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ONGOING.Designer.cs">
+      <DependentUpon>ONGOING.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PENDING.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PENDING.Designer.cs">
+      <DependentUpon>PENDING.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RECEIPT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RECEIPT.Designer.cs">
+      <DependentUpon>RECEIPT.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ADMINPROFILE.resx">
+      <DependentUpon>ADMINPROFILE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CANCELLED.resx">
+      <DependentUpon>CANCELLED.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COMPLETED.resx">
+      <DependentUpon>COMPLETED.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input.resx">
+      <DependentUpon>Input.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INPUTORDERS.resx">
+      <DependentUpon>INPUTORDERS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INVENTORY.resx">
+      <DependentUpon>INVENTORY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LISTOFORDERS.resx">
+      <DependentUpon>LISTOFORDERS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MESSAGES.resx">
+      <DependentUpon>MESSAGES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ONGOING.resx">
+      <DependentUpon>ONGOING.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PENDING.resx">
+      <DependentUpon>PENDING.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RECEIPT.resx">
+      <DependentUpon>RECEIPT.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\366805272_757193872872323_5078434534103116930_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\366807729_757193906205653_8874302854764237654_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\366802538_757193892872321_7595376187321280740_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\366796955_757193882872322_8912150700026585059_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\366805272_757193872872323_5078434534103116930_n1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\366807729_757193906205653_8874302854764237654_n1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\366802538_757193892872321_7595376187321280740_n1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\366796955_757193882872322_8912150700026585059_n1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SCC_NEW_LOGO %281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
